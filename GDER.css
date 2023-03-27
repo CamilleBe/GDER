@@ -6,6 +6,20 @@
     text-decoration: none;
 }
 
+.title {
+    margin-bottom: 25px;
+}
+
+.title h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.title p {
+    color: #5F5F5F;
+}
+
 /*NAV*/
 nav {
     height: 100px;
@@ -42,10 +56,13 @@ header {
 }
 
 /*TRANSITION ENERGETIQUE */
-#transition-energetique, #accompagnement, #services {
+#transition-energetique, #accompagnement, #services, #form, #container{
     width: 90%;
     margin: auto;
     margin-top: 50px;
+}
+.container-card a {
+    color: white;
 }
 
 .container-card, #container-stage {
@@ -67,13 +84,50 @@ header {
 
 #card1, #card2, #card3, #card4, #card5, #card6 {
     height: 600px;
-    width: 500px;
+    width: 30%;
     display: flex;
     align-items: end;
+    box-shadow: 0px 4px 8px #888888;
 }
 
-/* ACCOPAGNEMENT */
-.container-stage {
+
+
+/* FORM */
+/*#form {
+    background-color: #5E8763;
+    opacity: 0.8;
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#form p{
+    font-size: 20px;
+}*/
+
+.f2pl {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.fl {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.fl input, .fl select {
+    width: 100%;
+}
+
+/* ACCOMPAGNEMENT */
+#container-stage {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -81,13 +135,58 @@ header {
 
 .stage {
     background-color: rgba(54, 165, 5, 0.13);
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 3%;
+    text-align: center;
+}
+
+#container-stage img {
+    width: 90px;
+    height: 90px;
+}
+
+.stage div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+#accompagnement button, .container-card button {
+    margin-top: 45px;
+    border-radius: 10px;
+    border: solid 3px #3AA406;
+    font-weight: bold;
+    font-size: 18px;
+    color: #3AA406;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+}
+
+#accompagnement button:hover {
+    cursor: pointer;
+    background-color: #f1f0f0;
+}
+
+#t {
+    margin: auto;
+    width: 350px;
 }
 
 /*SERVICES*/
 #services .container-card{
     color: white;
+}
+
+.container-card button {
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 0px;
 }
 
 #card4 {
@@ -100,4 +199,19 @@ header {
 
 #card6 {
     background-image: url("img/imgcard6.png");
+}
+
+#card4 div, #card5 div, #card6 div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-card button:hover {
+    cursor: pointer;
+}
+
+/* FORM FIN */
+#form img {
+    width: 300px;
 }

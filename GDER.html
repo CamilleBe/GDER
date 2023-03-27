@@ -45,30 +45,109 @@
 
         <div>
             <p>Obtenez vos panneaux solaires via le formulaire </p>
-            <form>
 
+            <form action="POST">
+                <div class="f2pl">
+                    <select id="status" name="status">
+                        <option value="">→ Vous êtes... <sup>*</sup></option>
+                        <option value="owner">Propiétaire</option>
+                        <option value="tenant">Locataire</option>
+                    </select>
+
+                    <select id="heating" name="heating">
+                        <option value="">→ Votre chauffage actuel... <sup>*</sup></option>
+                        <option value="gas">Gaz</option>
+                        <option value="fuel_oil">Fioul</option>
+                        <option value="electric">Électrique</option>
+                        <option value="wood">Bois</option>
+                        <option value="dual">Dual(électricité + gaz)</option>
+                        <option value="other_heating">Autre</option>
+                    </select>
+                </div>
+
+                <div class="fl">
+                    <label for="accommodation"></label>
+                    <select id="accommodation" name="accommodation">
+                        <option value="">→ Type de logement... <sup>*</sup></option>
+                        <option value="house">Une maison</option>
+                        <option value="appartement">Un appartement</option>
+                        <option value="business premises">Locaux professionnels</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="fl exeption">
+                    <input type="checkbox" id="male" name="male">
+                    <label for="male">Mr</label>
+
+                    <input type="checkbox" id="female" name="female">
+                    <label for="female">Mme</label>
+
+                    <input type="checkbox" id="other_sex" name="other_sex">
+                    <label for="other_sex">Non définis</label>
+                </div>
+
+                <div class="f2pl">
+                    <input type="text" id="nom" name="nom" placeholder="→ Nom *" autocomplete="nom">
+
+                    <input type="text" id="prenom" name="prenom" placeholder="→ Prénom *" autocomplete="prenom">
+                </div>
+
+                <div class="fl">
+                    <input type="text" id="adresse" name="adresse" placeholder="→ Adresse" autocomplete="adresse">
+                </div>
+
+                <div class="f2pl">
+                    <input type="text" id="ville" name="ville" placeholder="→ Ville" autocomplete="ville">
+
+                    <input type="text" id="code_postal" name="code_postal" placeholder="→ codePostal *">
+                </div>
+
+                <div class="fl">
+                    <label for="email"></label>
+                    <input type="text" id="email" name="email" placeholder="→ Adresse e-mail *" autocomplete="email">
+                </div>
+
+                <div class="fl">
+                    <label for="telephone"></label>
+                    <input type="text" id="telephone" name="telephone" placeholder="→ Numéro de téléphone *" autocomplete="telephone">
+                </div>
+
+                <div id="fb">
+                    <div class="exeption" id="acceptations">
+                        <input type="checkbox" id="cgu" name="cgu">
+                        <label for="cgu">J'accepte les CGU et que leurs partenaires me communiquent leurs devis *</label>
+                        <br><br>
+
+                        <input type="checkbox" id="offre" name="offre">
+                        <label for="offre">J'accepte de recevoir des offres personnalisées email, téléphone et sms de EcoConfortSolution.fr ainsi que de ses partenaires</label>
+                    </div>
+                    <input type="submit" value="ENVOYER" id="hbutton">
+                </div>
             </form>
         </div>
     </header>
 
     <div id="transition-energetique">
-        <h2>TRANSITION ÉNERGÉTIQUE</h2>
-        <p>LE BUREAU D’ÉTUDES QUI VOUS ACCOMPAGNE POUR LA TRANSITION ÉNERGETIQUE</p>
+        <div class="title">
+            <h2>TRANSITION ÉNERGÉTIQUE</h2>
+            <p>LE BUREAU D’ÉTUDES QUI VOUS ACCOMPAGNE POUR LA TRANSITION ÉNERGETIQUE</p>
+        </div>
 
         <div class="container-card">
-            <a href="">
+            <a href="#services">
                 <div id="card1">
                     <p>Produisez votre propre électricité verte grâce à une centrale photovoltaïque.</p>
                 </div>
             </a>
 
-            <a href="">
+            <a href="#services">
                 <div id="card2">
                     <p>Devenez indépendant énergétique de manière compétitive !</p>
                 </div>
             </a>
 
-            <a href="">
+            <a href="#services">
                 <div id="card3">
                     <p>Choisissez la bonne GTB (Gestion Technique de Bâtiment) pour piloter vos consommations énergetiques et béneficiez d'aides.</p>
                 </div>
@@ -78,8 +157,10 @@
     </div>
 
     <div id="accompagnement">
-        <h2>NOTRE ACCOMPAGNEMENT</h2>
-        <p>LES ÉTAPES POUR VOUS SUIVRE TOUT AU LONG DE VOTRE PROJET</p>
+        <div class="title">
+            <h2>NOTRE ACCOMPAGNEMENT</h2>
+            <p>LES ÉTAPES POUR VOUS SUIVRE TOUT AU LONG DE VOTRE PROJET</p>
+        </div>
 
         <div id="container-stage">
             <div class="stage">
@@ -124,14 +205,19 @@
                 </div>
             </div>
         </div>
-        <a href="">
-            <button>ME FAIRE ACCOMPAGNER</button>
-        </a>
+
+        <div id="t">
+            <a href="#form">
+                <button>ME FAIRE ACCOMPAGNER</button>
+            </a>
+        </div>
     </div>
 
     <div id="services">
-        <h2>NOS SERVICES</h2>
-        <p>INSTALLEZ DÉS MAINTEANT VOS PROPRES PANNEAUX-SOLAIRES</p>
+        <div class="title">
+            <h2>NOS SERVICES</h2>
+            <p>INSTALLEZ DÉS MAINTEANT VOS PROPRES PANNEAUX-SOLAIRES</p>
+        </div>
 
         <div class="container-card">
                 <div id="card4">
@@ -165,8 +251,10 @@
     </div>
 
     <div id="form">
-        <h2>FORMULAIRE</h2>
-        <p>REMPLISSEZ MAINTENANT NOTRE FORMULAIRE AFIN DE NOUS FOURNIR VOS INFORMATIONS ET COMMENCER A CONSTRUIRE VOTRE PROJET</p>
+        <div class="title">
+            <h2>FORMULAIRE</h2>
+            <p>REMPLISSEZ MAINTENANT NOTRE FORMULAIRE AFIN DE NOUS FOURNIR VOS INFORMATIONS ET COMMENCER A CONSTRUIRE VOTRE PROJET</p>
+        </div>
 
         <div>
             <div>
