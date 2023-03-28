@@ -219,9 +219,40 @@
 
             <div id="grey"></div>
 
-            <div>
-                <form>
+            <div id="container-form">
+                <form action="POST">
+                    <div class="fl">
+                        <select id="status" name="status">
+                            <option value="">SERVICE ... <sup>*</sup></option>
+                            <option value="owner">Propiétaire</option>
+                            <option value="tenant">Locataire</option>
+                        </select>
+                    </div>
 
+                    <div class="f2pl">
+                        <input type="text" id="nom" name="nom" placeholder="NOM *" autocomplete="nom">
+
+                        <input type="text" id="prenom" name="prenom" placeholder="PRENOM *" autocomplete="prenom">
+                    </div>
+
+                    <div class="fl">
+                        <input type="text" id="nom_entreprise" name="nom_entreprise" placeholder="NOM DE L'ENTREPRISE" autocomplete="nom_entreprise">
+                    </div>
+
+                    <div class="f2pl">
+                        <input type="text" id="code_postal" name="code_postal" placeholder="CODE POSTAL" autocomplete="code_postal">
+
+                        <input type="text" id="telephone" name="telephone" placeholder="TELEPHONE *">
+                    </div>
+
+                    <div class="fl">
+                        <label for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="E-MAIL *" autocomplete="email">
+                    </div>
+
+                    <div id="container-fbutton">
+                        <input type="submit" value="ENVOYER">
+                    </div>
                 </form>
             </div>
 
