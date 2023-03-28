@@ -4,6 +4,8 @@
     font-family: arial;
     list-style-type: none;
     text-decoration: none;
+    border: none;
+    outline: none;
 }
 
 .title {
@@ -51,8 +53,111 @@ nav a {
 
 /*HEADER*/
 header {
-    height: 800px;
+    height: 600px;
     background-image: url("img/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+#left-header h1, #left-header p, #left-header button {
+   color: white;
+    text-align: center;
+}
+
+#left-header, #illustration, #right-header{
+    margin-top: 145px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+#left-header p {
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+#left-header button, #hbutton {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    background-color: #8BD8AE;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+#left-header button:hover {
+    background-color: #58a27b;
+    cursor: pointer;
+}
+
+#left-header {
+    margin-top: 145px;
+}
+
+#right-header p{
+    color: white;
+    font-size: 20px;
+    font-weight: BOLD;
+}
+
+
+/* FORM */
+.f2pl {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.fl {
+    width: 95%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.fl input, .fl select {
+    width: 100%;
+}
+
+.fl input, .fl select, .f2pl input {
+    padding: 15px;
+    /*padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;*/
+}
+
+form input, form select {
+    background-color: white;
+    border-radius: 10px;
+}
+
+form select {
+    color: grey;
+}
+
+#hbutton {
+    background-color: #0371B7;
+    color: white;
+    width: 155px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+form {
+    max-width: 485px;
+    width: 85%;
 }
 
 /*TRANSITION ENERGETIQUE */
@@ -87,42 +192,6 @@ header {
     display: flex;
     align-items: end;
     box-shadow: 0px 4px 8px #888888;
-}
-
-
-
-/* FORM */
-/*#form {
-    background-color: #5E8763;
-    opacity: 0.8;
-    width: 50%;
-    height: 10%;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-#form p{
-    font-size: 20px;
-}*/
-
-.f2pl {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.fl {
-    width: 95%;
-    margin: auto;
-    margin-top: 30px;
-}
-
-.fl input, .fl select {
-    width: 100%;
 }
 
 /*TRANSITION ENERGETIQUE */
@@ -235,6 +304,8 @@ header {
     background-color: #E6F4E1;
     border-radius: 10px;
     display: flex;
+    margin-bottom: 50px;
+    height: 600px;
 }
 
 #illustration {
@@ -253,3 +324,21 @@ header {
 #form img {
     width: 300px;
 }
+
+#illustration {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#illustration h3 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 35px;
+}
+
+#illustration p {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 45px;
+}
+
