@@ -49,6 +49,11 @@ nav a {
     color: black;
 }
 
+#le-buttun-perdu {
+    display: flex;
+    justify-content: end;
+}
+
 /*HEADER*/
 header {
     height: 600px;
@@ -109,9 +114,7 @@ header {
 
 /* FORM */
 .f2pl {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,7 +122,7 @@ header {
 }
 
 .fl {
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 15px;
 }
@@ -157,7 +160,6 @@ form select {
     background-color: #0371B7;
     color: white;
     width: 155px;
-    margin-left: 10px;
     margin-top: 15px;
 }
 
@@ -169,6 +171,7 @@ form select {
 form {
     max-width: 485px;
     width: 85%;
+    margin-left: 20px;
 }
 
 /*TRANSITION ENERGETIQUE */
@@ -443,7 +446,201 @@ form {
 
     #card1, #card2, #card3, #card4, #card5, #card6 {
         height: 500px;
+        background-position: bottom;
     }
 }
 
+@media (max-width: 1100px) {
+    .fl input {
+        width: 91%;
+    }
+    .f2pl input:first-child{
+        margin-right: 15px;
+    }
+    #right-header p{
+        margin-left: 30px;
+    }
+    #container-form {
+        margin-right: 20px;
+    }
+}
 
+@media (max-width: 970px) {
+
+    nav img {
+        margin-left: 0;
+    }
+    #right {
+        margin-right: 0;
+    }
+    nav p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 865px) {
+    #card5 h3 {
+        margin-bottom: 25px;
+    }
+
+    #illustration img {
+        width: 250px;
+    }
+    #right-header p{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    nav p {
+        font-size: 14px;
+    }
+    nav img {
+        width: 150px;
+    }
+    #left-header h1 {
+        font-size: 25px;
+    }
+    #left-header p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 785px) {
+    #card1, #card2, #card3, #card4, #card5, #card6 {
+        height: 400px;
+        width: 75%;
+    }
+
+    #transition-energetique a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .fl input {
+        width: 93%;
+    }
+    #illustration h3 {
+        font-size: 25px;
+    }
+    #illustration p {
+        font-size: 15px;
+    }
+    #container-form input, #container-form select{
+        font-size: 10px;
+    }
+
+    #container-fbutton input {
+        font-size: 13px;
+    }
+
+    #contact {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 50px;
+    }
+    #grey {
+        display: none;
+    }
+     #illustration, #container-form {
+         margin: auto;
+         margin-top: 0px;
+         margin-bottom: 0px;
+         width: 85%;
+     }
+
+     #illustration {
+         padding: 0px;
+     }
+    nav p {
+        font-size: 12px;
+    }
+    #left-header, #right-header {
+        margin-top: 75px;
+    }
+    #transition-energetique, #accompagnement, #services{
+        margin-top: 75px;
+    }
+    .title h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 745px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 75px;
+    }
+
+    #right-header {
+        margin-top: 35px;
+    }
+
+    #right-header, #left-header {
+        width: 75%;
+    }
+
+    #left-header p {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 660px) {
+    nav a, nav p {
+        width: 55%;
+        font-size: 10px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 500px) {
+    #card1, #card2, #card3, #card4, #card5, #card6 {
+        height: 350px;
+    }
+    #right {
+        display: none;
+    }
+    nav {
+        justify-content: center;
+        height: 75px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    #left-header p {
+        display: none;
+    }
+    #left-header button {
+        margin-top: 25px;
+    }
+    #form .title h2 {
+        font-size: 20px;
+    }
+    #form .title p {
+        font-size: 14px;
+    }
+    #right-header {
+        text-align: center;
+    }
+    #le-buttun-perdu {
+        justify-content: center;
+    }
+    #right-header form{
+        margin: auto;
+    }
+    .title h2 {
+        font-size: 20px;
+    }
+    .title p {
+        font-size: 12px;
+    }
+}
